@@ -1,5 +1,6 @@
 import requests
 import urllib
+import sys
 from datetime import date
 
 ENDPOINT = "https://api.nasa.gov/planetary/apod"
@@ -18,4 +19,4 @@ today = date.today()
 dateString = today.strftime("%b-%d-%Y")
 
 title = dateString + "_" + img[img.rfind("/")+1:]
-urllib.urlretrieve(img, title)
+urllib.urlretrieve(img, sys.argv[1] + "/" + title)

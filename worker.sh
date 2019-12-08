@@ -4,10 +4,10 @@
 IMAGE_PATH="images"
 
 # Creates directory if directory does not exist
-if [ ! -d "$IMAGE_PATH" ]; then
-    mkdir $IMAGE_PATH
+if [ ! -d "$1/$IMAGE_PATH" ]; then
+    mkdir $1/$IMAGE_PATH
 fi
 
 # Downloads nasa picture and mv to images folder
-python src/download.py
-mv *.jpg $IMAGE_PATH
+python $1/src/download.py $1
+mv $1/*.jpg $1/$IMAGE_PATH
