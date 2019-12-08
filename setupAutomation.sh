@@ -1,6 +1,6 @@
 CMDVPIP="$(command -v pip)"
 
-if [ -d "$CMDVPIP" ]; then
+if [ "$CMDVPIP" = "" ]; then
     sudo easy_install pip
 fi
 pip install requests
