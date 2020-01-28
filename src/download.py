@@ -5,7 +5,7 @@ from datetime import date
 
 ENDPOINT = "https://api.nasa.gov/planetary/apod"
 
-key = "cqSESRj48zUZpMRZcoqYJza0PRiZumAbomANiwoj"
+key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 PARAMS = {  "api_key":key,
             "hd":True}
